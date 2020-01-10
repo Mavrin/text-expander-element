@@ -196,6 +196,10 @@ export default class TextExpanderElement extends HTMLElement {
     return keys ? keys.split(' ') : []
   }
 
+  set keys(value: string) {
+    this.setAttribute('value')
+  }
+
   connectedCallback() {
     const input = this.querySelector('input[type="text"], textarea')
     if (!(input instanceof HTMLInputElement || input instanceof HTMLTextAreaElement)) return
