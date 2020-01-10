@@ -1,0 +1,8 @@
+/* @flow strict */
+
+declare module '@github/text-expander-element' {
+  declare export default class TextExpanderElement extends HTMLElement {
+    get keys(): Array<string>;
+    set keys(value: string): void;
+  }
+}
