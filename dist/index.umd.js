@@ -333,7 +333,7 @@
     }
 
     set keys(value) {
-      this.setAttribute('value');
+      this.setAttribute('keys', value);
     }
 
     connectedCallback() {
